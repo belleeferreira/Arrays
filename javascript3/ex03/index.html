@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var drofo= {"anel":1, "bota":2, "pocao_sono":1, "pocoes_inocencia":2};
+        var topper= {"capa":1, "pedra":1, "varinha":1, "pocao_inocencia":1, "pocoes_mentira":2, "anti_inteligencia":1};
+        // preicso tirar topper: uma das poções da mentira, a pedra do despertar
+        topper.pocoes_mentira-=1;
+        topper.pedra-=1;
+        // preciso colocar no lugar: ganhou par de botas magicas, escudo magico, e espada magica.
+        topper.botas_magicas = 1;
+        topper.escudo_magico = 1;
+        topper.espada_magica = 1;
+
+        // preciso adicionar drofo: mais uma bota magica, ovo de drgao, coxinha
+        drofo.bota +=1;
+        drofo.ovo_dragao =1;
+        drofo.coxinha =1;
+        // preciso tirar drofo: poção do sono, anti-inteligencia.
+        drofo.pocao_sono -=1
+        topper.anti_inteligencia -=1
+        // como mostrar o dicionario no document.write
+        document.write(`O inventário do Drofo é: ${drofo} <br>`)
+        document.write(`O inventário do Topper é: ${topper}`)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var contagem= 0;
+        var valores= [];
+        var valores2= [];
+        while(contagem!=13){
+              var numero= parseInt(prompt("Informe um número"));
+              if(numero<50){
+                  valores.push(numero)
+              }
+              if(numero>50){
+                  valores2.push(numero)
+              }
+              contagem++
+        }
+        alert(`Essa é a lista com números menores que 50: ${valores}`)
+        alert(`Essa é a lista com números maiores que 50: ${valores2}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
